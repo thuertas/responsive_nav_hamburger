@@ -1,0 +1,111 @@
+/* MMDD159 - Module 10 - Response Navigation     */
+/* Extra small devices (phones, less than 600px) */
+/* No media query since this is the default CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+nav {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #666;
+    /* This will crop elements that overflow the height of our NAV */
+    height: 40px;
+    overflow: hidden;
+    transition: .5s;
+}
+/*This class will be added with jQuery*/
+.navexpanded {
+    height:150px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+nav ul > li {
+    margin-top: 14px;
+    flex-basis: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: .5s;
+    margin: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #333;
+    background: #FFD700;
+}
+
+#logo {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 0px;
+    flex-basis: 50%;
+    text-align:left;
+}
+
+#logo a:hover {
+    background: none;
+}
+
+#menu-icon {
+    flex-basis: 50%;
+    text-align: right;
+    font-size: 28px;
+    margin-top: 0px;
+}
+
+/* Small devices (i.e. tablets in portrait) */
+
+@media (min-width: 600px) {
+    
+    #logo {
+        margin-right: auto;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        align-items: baseline;
+
+    }
+
+}
+/* Medium devices (i.e. tablets in landscape */
+
+@media (min-width: 900px) {}
+/* Large devices (i.e. desktop) */
+
+@media (min-width: 1200px) {}
+/* X-Large devices (i.e. big desktop) */
+
+@media (min-width: 1800px) {}
